@@ -11,7 +11,7 @@ class ExampleTest extends TestCase {
 	{
 		$response = $this->call('GET', '/');
 
-		$this->assertEquals(404, $response->getStatusCode());
+		$this->assertEquals(401, $response->getStatusCode());
 	}
 
 }
